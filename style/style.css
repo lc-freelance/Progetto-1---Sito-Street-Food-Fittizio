@@ -179,7 +179,7 @@ header {
   display: flex;
   justify-content: left;
   align-items: center;
-  background-image: url(/image/hero-immagine-pizza.png);
+  background-image: url(../image/hero-immagine-pizza.png);
   background-repeat: no-repeat;
   background-position: right center;
   background-size: contain;
