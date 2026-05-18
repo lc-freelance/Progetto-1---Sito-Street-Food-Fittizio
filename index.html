@@ -9,12 +9,25 @@
       name="description"
       content="Pizza fritta croccante e dorata, farcita al momento con ingredienti freschi. Tradizione napoletana da gustare per strada. Vieni a provarla!"
     />
+    <link rel="icon" type="image/x-icon" href="./image/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./image/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./image/favicon-16x16.png"
+    />
     <link rel="apple-touch-icon" href="./image/apple-touch-icon.png" />
     <link rel="stylesheet" href="./style/style.css" />
-    <link rel="preload" as="image" href="./image/chi-siamo-image.avif">
-    <link rel="preload" as="image" href="./image/card-margherita.avif">
-    <link rel="preload" as="image" href="./image/card-patatosa.avif">
-    <link rel="preload" as="image" href="./image/card-tradizionale.avif">
+    <link rel="preload" as="image" href="./image/chi-siamo-image.avif" />
+    <link rel="preload" as="image" href="./image/card-margherita.avif" />
+    <link rel="preload" as="image" href="./image/card-patatosa.avif" />
+    <link rel="preload" as="image" href="./image/card-tradizionale.avif" />
   </head>
   <body>
     <!-- Nav-bar + hero section + logo -->
@@ -22,31 +35,36 @@
       <nav class="nav-bar" role="navigation" aria-label="Menu principale">
         <div class="logo">
           <picture>
-            <source srcset="./image/logo-pizza-fritta-napoletana.avif" type="image/avif">
+            <source srcset="./image/icona-brand.avif" type="image/avif" />
+            <source srcset="./image/icona-brand.webp" type="image/webp" />
             <img
-              src="./image/logo-pizza-fritta-napoletana.avif"
+              src="./image/icona-brand.jpg"
               alt="Il logo del nostro pub"
               title="Il nostro brand"
-              width="150"
-              height="150"
+              width="120"
+              height="120"
               loading="eager"
               decoding="async"
               draggable="false"
             />
           </picture>
         </div>
-        <ul>
+        <button
+          id="btn-hamburger"
+          type="button"
+          aria-label="Seleziona per aprire il menù"
+        >
+          ☰
+        </button>
+        <ul id="menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="menù.html">Menù</a></li>
           <li><a href="#contatti">Contatti</a></li>
         </ul>
-        <span class="hamburger-menù"
-          ><img src="./image/hamburger-menu.svg" alt="" width="100" height="50"
-        /></span>
       </nav>
       <div class="button-prenotazioni">
         <a
-          href="#"
+          href="https://wa.me/123 456 7890"
           aria-label="Porta alla pagina whatsapp (si apre in una pagina esterna)"
           rel="noopener noreferrer"
           ><img
@@ -64,7 +82,9 @@
           <p>Autentica pizza napoletana piegata a portafoglio.</p>
           <p>Street food di tradizione, fatto con passione.</p>
           <p>Veloce, genuina, sempre fumante.</p>
-          <span class="position-button"><a href="#">Vieni a trovarci!</a></span>
+          <span class="position-button"
+            ><a href="#contatti">Vieni a trovarci!</a></span
+          >
         </div>
       </div>
     </header>
@@ -84,7 +104,7 @@
           </p>
           <div class="chi-siamo-image">
             <picture>
-              <source srcset="./image/chi-siamo-image.avif" type="image/avif">
+              <source srcset="./image/chi-siamo-image.avif" type="image/avif" />
               <img
                 src="./image/chi-siamo-image.avif"
                 alt="Una nostra fotografia che ritrae l'amore per il nostro lavoro"
@@ -105,7 +125,10 @@
           <article class="card-item">
             <div class="card-image">
               <picture>
-                <source srcset="./image/card-margherita.avif" type="image/avif">
+                <source
+                  srcset="./image/card-margherita.avif"
+                  type="image/avif"
+                />
                 <img
                   src="./image/card-margherita.avif"
                   alt="La pizza napoletana classica"
@@ -126,7 +149,7 @@
           <article class="card-item">
             <div class="card-image">
               <picture>
-                <source srcset="./image/card-patatosa.avif" type="image/avif">
+                <source srcset="./image/card-patatosa.avif" type="image/avif" />
                 <img
                   src="./image/card-patatosa.avif"
                   alt="La pizza preferita dai più piccoli"
@@ -147,7 +170,10 @@
           <article class="card-item">
             <div class="card-image">
               <picture>
-                <source srcset="./image/card-tradizionale.avif" type="image/avif">
+                <source
+                  srcset="./image/card-tradizionale.avif"
+                  type="image/avif"
+                />
                 <img
                   src="./image/card-tradizionale.avif"
                   alt="La tradizionale napoletana"
@@ -171,8 +197,8 @@
         <div class="dove-siamo-container">
           <h3>Vieni a trovarci</h3>
           <address>
-            Via Fittizia, 789 <br />
-            Fittizzapoli, (FI) <br />
+            Via Roma, 789 <br />
+            Napoli, (NA) <br />
             La nostra
             <a href="#" target="_blank" rel="noopener noreferrer">posizione</a>
           </address>
@@ -198,7 +224,7 @@
         <ul>
           <li>
             <a
-              href="#"
+              href="https://www.tiktok.com/"
               aria-label="Porta alla pagina Tik-tok (si apre in una pagina esterna)"
               rel="noopener noreferrer"
               ><img
@@ -213,7 +239,7 @@
           </li>
           <li>
             <a
-              href="#"
+              href="https://www.instagram.com/"
               aria-label="Porta alla pagina Instagram (si apre in una pagina esterna)"
               rel="noopener noreferrer"
               ><img
@@ -229,7 +255,7 @@
           </li>
           <li>
             <a
-              href="#"
+              href="https://www.facebook.com/"
               aria-label="Porta alla pagina Facebook (si apre in una pagina esterna)"
               rel="noopener noreferrer"
               ><img
@@ -248,18 +274,25 @@
     <footer>
       <div class="footer-container">
         <ul>
-          <li><a href="#">email.finta@gmox.com</a></li>
-          <li><a href="#">123 456 7890</a></li>
+          <li>
+            <a
+              href="mailto:pizzeriaportafoglio.n@gmail.com?subject=Richiesta%20informazioni&body=Ciao%2C%20posso%20avere%20informazioni%20aggiuntive%3F"
+              >pizzeriaportafoglio.n@gmail.com</a
+            >
+          </li>
+          <li><a href="tel:+391234567890">+ 39 123 456 7890</a></li>
         </ul>
         <div class="utility">
           <div class="utility-1"></div>
-          <p>&copy; 2026 Fittizio. Tutti i diritti riservati.</p>
-          <p>P.IVA: 0000000000</p>
           <div class="utility-2">
-            <a href="#">Privacy Policy</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="privacy.html">Cookie Policy</a>
           </div>
+          <p>P.IVA: 0000000000</p>
+          <p>&copy; 2026 Fittizio. Tutti i diritti riservati.</p>
         </div>
       </div>
     </footer>
+    <script src="./script/script.js"></script>
   </body>
 </html>

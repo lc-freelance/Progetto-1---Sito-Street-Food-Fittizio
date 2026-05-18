@@ -14,7 +14,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/image/favicon-32x32.png"
+      href="./image/favicon-32x32.png"
     />
     <link
       rel="icon"
@@ -24,33 +24,47 @@
     />
     <link rel="apple-touch-icon" href="./image/apple-touch-icon.png" />
     <link rel="stylesheet" href="./style/style.css" />
+    <!-- <link rel="preload" as="image" href="./image/chi-siamo-image.avif" />
+    <link rel="preload" as="image" href="./image/card-margherita.avif" />
+    <link rel="preload" as="image" href="./image/card-patatosa.avif" />
+    <link rel="preload" as="image" href="./image/card-tradizionale.avif" /> -->
   </head>
   <body>
     <!-- Nav-bar + hero section + logo -->
     <header>
       <nav class="nav-bar" role="navigation" aria-label="Menu principale">
         <div class="logo">
-          <img
-            src="./image/logo-pizza-fritta-napoletana.avif"
-            alt="Il logo del nostro pub"
-            title="Il nostro brand"
-            width="150"
-            height="150"
-            draggable="false"
-          />
+          <picture>
+            <source srcset="./image/icona-brand.avif" type="image/avif" />
+            <source srcset="./image/icona-brand.webp" type="image/webp" />
+            <img
+              src="./image/icona-brand.jpg"
+              alt="Il logo del nostro pub"
+              title="Il nostro brand"
+              width="120"
+              height="120"
+              loading="eager"
+              decoding="async"
+              draggable="false"
+            />
+          </picture>
         </div>
-        <ul>
+        <button
+          id="btn-hamburger"
+          type="button"
+          aria-label="Seleziona per aprire il menù"
+        >
+          ☰
+        </button>
+        <ul id="menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="menù.html">Menù</a></li>
           <li><a href="#contatti">Contatti</a></li>
         </ul>
-        <span class="hamburger-menù"
-          ><img src="./image/hamburger-menu.svg" alt="" width="100" height="50"
-        /></span>
       </nav>
       <div class="button-prenotazioni">
         <a
-          href="#"
+          href="https://wa.me/123 456 7890"
           aria-label="Porta alla pagina whatsapp (si apre in una pagina esterna)"
           rel="noopener noreferrer"
           ><img
@@ -135,7 +149,7 @@
         <ul>
           <li>
             <a
-              href="#"
+              href="https://www.tiktok.com/"
               aria-label="Porta alla pagina Tik-tok (si apre in una pagina esterna)"
               rel="noopener noreferrer"
               ><img
@@ -150,7 +164,7 @@
           </li>
           <li>
             <a
-              href="#"
+              href="https://www.instagram.com/"
               aria-label="Porta alla pagina Instagram (si apre in una pagina esterna)"
               rel="noopener noreferrer"
               ><img
@@ -166,7 +180,7 @@
           </li>
           <li>
             <a
-              href="#"
+              href="https://www.facebook.com/"
               aria-label="Porta alla pagina Facebook (si apre in una pagina esterna)"
               rel="noopener noreferrer"
               ><img
@@ -185,8 +199,13 @@
     <footer>
       <div class="footer-container">
         <ul>
-          <li><a href="#">email.finta@gmox.com</a></li>
-          <li><a href="#">123 456 7890</a></li>
+          <li>
+            <a
+              href="mailto:pizzeriaportafoglio.n@gmail.com?subject=Richiesta%20informazioni&body=Ciao%2C%20posso%20avere%20informazioni%20aggiuntive%3F"
+              >pizzeriaportafoglio.n@gmail.com</a
+            >
+          </li>
+          <li><a href="tel:+391234567890">+ 39 123 456 7890</a></li>
         </ul>
         <div class="utility">
           <div class="utility-1"></div>
@@ -198,5 +217,6 @@
         </div>
       </div>
     </footer>
+    <script src="./script/script.js"></script>
   </body>
 </html>

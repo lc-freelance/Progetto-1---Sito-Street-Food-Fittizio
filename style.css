@@ -94,37 +94,37 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../font/OpenSans-VariableFont_wdth\,wght.ttf") format("woff2");
+  src: url("../font/OpenSans-VariableFont_wdth\,wght.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../font/OpenSans-Italic-VariableFont_wdth\,wght.ttf") format("woff2");
+  src: url("../font/OpenSans-Italic-VariableFont_wdth\,wght.ttf") format("ttf");
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../font/OpenSans-VariableFont_wdth\,wght.ttf") format("woff2");
+  src: url("../font/OpenSans-VariableFont_wdth\,wght.ttf") format("ttf");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../font/OpenSans-Italic-VariableFont_wdth\,wght.ttf") format("woff2");
+  src: url("../font/OpenSans-Italic-VariableFont_wdth\,wght.ttf") format("ttf");
   font-weight: 700;
   font-style: italic;
 }
 @font-face {
   font-family: "Oswald";
-  src: url("../font/Oswald-VariableFont_wght.ttf") format("woff2");
+  src: url("../font/Oswald-VariableFont_wght.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Oswald";
-  src: url("../font/Oswald-VariableFont_wght.ttf") format("woff2");
+  src: url("../font/Oswald-VariableFont_wght.ttf") format("ttf");
   font-weight: 700;
   font-style: normal;
 }
@@ -144,7 +144,7 @@ h2,
 h3 {
   font-family: "Oswald", sans-serif;
   font-size: 3.5em;
-  color: #8b1f09;
+  color: #490000;
   margin: 0;
   padding: 0;
 }
@@ -191,10 +191,10 @@ header {
 .nav-bar a {
   text-decoration: none;
   font-size: 1.7em;
-  color: #8b1f09;
+  color: #490000;
   font-weight: 600;
 }
-.hamburger-menù {
+#btn-hamburger {
   display: none;
 }
 .nav-bar li:hover {
@@ -235,7 +235,7 @@ header {
 
   & p {
     font-size: 1.8em;
-    color: #f1edd9;
+    color: #ecebe4;
     margin: 5px 0;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     font-weight: 500;
@@ -254,7 +254,7 @@ header {
 .position-button a {
   font-size: 1.5em;
   background-color: #526000;
-  color: #f1edd9;
+  color: #ecebe4;
   text-decoration: none;
   padding: 15px 30px;
   border-radius: 20px;
@@ -267,7 +267,7 @@ header {
 
 .position-button a:hover,
 .position-button a:focus {
-  background-color: #a5240c;
+  background-color: #490000;
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   animation: none;
@@ -391,7 +391,7 @@ header {
   }
   & a {
     text-decoration: none;
-    color: #8b1f09;
+    color: #490000;
     font-weight: 600;
   }
   & ul {
@@ -485,15 +485,15 @@ footer a:hover {
   padding: 100px;
 }
 .menu-hero h1 {
-  color: #8b1f09;
+  color: #490000;
   text-align: center;
 }
 .menu-hero h2 {
-  color: #8b1f09;
+  color: #490000;
   font-size: 3em;
 }
 .menu-hero dt {
-  color: #f1edd9;
+  color: #ecebe4;
   font-size: 2em;
 }
 .menu-hero dd {
@@ -520,10 +520,35 @@ footer a:hover {
   }
   .nav-bar ul {
     display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 8rem;
+    left: 0;
+    width: 100%;
+    background-color: #f1edd9;
+    padding: 20px 0;
+    gap: 0;
+    margin: 0;
+    box-shadow: 0px 10px 20px #58371a;
   }
-  .hamburger-menù {
+  #btn-hamburger {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2em;
+    color: #58371a;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  .nav-bar ul.aperto {
     display: flex;
   }
+
+  .nav-bar li {
+    padding: 15px 0;
+    text-align: center;
+  }
+  
   .logo {
     padding: 0 20px;
     & img {
